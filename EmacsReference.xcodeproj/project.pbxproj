@@ -1,0 +1,284 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		911A854A140E402D001D0B1C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 911A8549140E402D001D0B1C /* UIKit.framework */; };
+		911A854C140E402D001D0B1C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 911A854B140E402D001D0B1C /* Foundation.framework */; };
+		911A8552140E402D001D0B1C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 911A8550140E402D001D0B1C /* InfoPlist.strings */; };
+		911A8554140E402D001D0B1C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 911A8553140E402D001D0B1C /* main.m */; };
+		911A8558140E402D001D0B1C /* ERAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 911A8557140E402D001D0B1C /* ERAppDelegate.m */; };
+		911A855B140E402D001D0B1C /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 911A8559140E402D001D0B1C /* MainStoryboard.storyboard */; };
+		911A855E140E402D001D0B1C /* ERMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 911A855D140E402D001D0B1C /* ERMasterViewController.m */; };
+		911A8561140E402D001D0B1C /* ERDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 911A8560140E402D001D0B1C /* ERDetailViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		911A8545140E402D001D0B1C /* EmacsReference.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmacsReference.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		911A8549140E402D001D0B1C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		911A854B140E402D001D0B1C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		911A854F140E402D001D0B1C /* EmacsReference-Info.plist */ = {isa = PBXFileReference; path = "EmacsReference-Info.plist"; sourceTree = "<group>"; };
+		911A8551140E402D001D0B1C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		911A8553140E402D001D0B1C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		911A8555140E402D001D0B1C /* EmacsReference-Prefix.pch */ = {isa = PBXFileReference; path = "EmacsReference-Prefix.pch"; sourceTree = "<group>"; };
+		911A8556140E402D001D0B1C /* ERAppDelegate.h */ = {isa = PBXFileReference; path = ERAppDelegate.h; sourceTree = "<group>"; };
+		911A8557140E402D001D0B1C /* ERAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ERAppDelegate.m; sourceTree = "<group>"; };
+		911A855A140E402D001D0B1C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		911A855C140E402D001D0B1C /* ERMasterViewController.h */ = {isa = PBXFileReference; path = ERMasterViewController.h; sourceTree = "<group>"; };
+		911A855D140E402D001D0B1C /* ERMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ERMasterViewController.m; sourceTree = "<group>"; };
+		911A855F140E402D001D0B1C /* ERDetailViewController.h */ = {isa = PBXFileReference; path = ERDetailViewController.h; sourceTree = "<group>"; };
+		911A8560140E402D001D0B1C /* ERDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ERDetailViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		911A8542140E402D001D0B1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				911A854A140E402D001D0B1C /* UIKit.framework in Frameworks */,
+				911A854C140E402D001D0B1C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		911A853A140E402D001D0B1C = {
+			isa = PBXGroup;
+			children = (
+				911A854D140E402D001D0B1C /* EmacsReference */,
+				911A8548140E402D001D0B1C /* Frameworks */,
+				911A8546140E402D001D0B1C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		911A8546140E402D001D0B1C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				911A8545140E402D001D0B1C /* EmacsReference.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		911A8548140E402D001D0B1C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				911A8549140E402D001D0B1C /* UIKit.framework */,
+				911A854B140E402D001D0B1C /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		911A854D140E402D001D0B1C /* EmacsReference */ = {
+			isa = PBXGroup;
+			children = (
+				911A8556140E402D001D0B1C /* ERAppDelegate.h */,
+				911A8557140E402D001D0B1C /* ERAppDelegate.m */,
+				911A8559140E402D001D0B1C /* MainStoryboard.storyboard */,
+				911A855C140E402D001D0B1C /* ERMasterViewController.h */,
+				911A855D140E402D001D0B1C /* ERMasterViewController.m */,
+				911A855F140E402D001D0B1C /* ERDetailViewController.h */,
+				911A8560140E402D001D0B1C /* ERDetailViewController.m */,
+				911A854E140E402D001D0B1C /* Supporting Files */,
+			);
+			path = EmacsReference;
+			sourceTree = "<group>";
+		};
+		911A854E140E402D001D0B1C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				911A854F140E402D001D0B1C /* EmacsReference-Info.plist */,
+				911A8550140E402D001D0B1C /* InfoPlist.strings */,
+				911A8553140E402D001D0B1C /* main.m */,
+				911A8555140E402D001D0B1C /* EmacsReference-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		911A8544140E402D001D0B1C /* EmacsReference */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 911A8564140E402D001D0B1C /* Build configuration list for PBXNativeTarget "EmacsReference" */;
+			buildPhases = (
+				911A8541140E402D001D0B1C /* Sources */,
+				911A8542140E402D001D0B1C /* Frameworks */,
+				911A8543140E402D001D0B1C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EmacsReference;
+			productName = EmacsReference;
+			productReference = 911A8545140E402D001D0B1C /* EmacsReference.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		911A853C140E402D001D0B1C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = Wings;
+			};
+			buildConfigurationList = 911A853F140E402D001D0B1C /* Build configuration list for PBXProject "EmacsReference" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 911A853A140E402D001D0B1C;
+			productRefGroup = 911A8546140E402D001D0B1C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				911A8544140E402D001D0B1C /* EmacsReference */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		911A8543140E402D001D0B1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				911A8552140E402D001D0B1C /* InfoPlist.strings in Resources */,
+				911A855B140E402D001D0B1C /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		911A8541140E402D001D0B1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				911A8554140E402D001D0B1C /* main.m in Sources */,
+				911A8558140E402D001D0B1C /* ERAppDelegate.m in Sources */,
+				911A855E140E402D001D0B1C /* ERMasterViewController.m in Sources */,
+				911A8561140E402D001D0B1C /* ERDetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		911A8550140E402D001D0B1C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				911A8551140E402D001D0B1C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		911A8559140E402D001D0B1C /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				911A855A140E402D001D0B1C /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		911A8562140E402D001D0B1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		911A8563140E402D001D0B1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		911A8565140E402D001D0B1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EmacsReference/EmacsReference-Prefix.pch";
+				INFOPLIST_FILE = "EmacsReference/EmacsReference-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		911A8566140E402D001D0B1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EmacsReference/EmacsReference-Prefix.pch";
+				INFOPLIST_FILE = "EmacsReference/EmacsReference-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		911A853F140E402D001D0B1C /* Build configuration list for PBXProject "EmacsReference" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				911A8562140E402D001D0B1C /* Debug */,
+				911A8563140E402D001D0B1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		911A8564140E402D001D0B1C /* Build configuration list for PBXNativeTarget "EmacsReference" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				911A8565140E402D001D0B1C /* Debug */,
+				911A8566140E402D001D0B1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 911A853C140E402D001D0B1C /* Project object */;
+}
