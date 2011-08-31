@@ -15,6 +15,7 @@
 		911A855B140E402D001D0B1C /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 911A8559140E402D001D0B1C /* MainStoryboard.storyboard */; };
 		911A855E140E402D001D0B1C /* ERMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 911A855D140E402D001D0B1C /* ERMasterViewController.m */; };
 		911A8561140E402D001D0B1C /* ERDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 911A8560140E402D001D0B1C /* ERDetailViewController.m */; };
+		914ED05F140E43FA00C1044E /* emacs.db in Resources */ = {isa = PBXBuildFile; fileRef = 914ED05E140E43FA00C1044E /* emacs.db */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		911A855D140E402D001D0B1C /* ERMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ERMasterViewController.m; sourceTree = "<group>"; };
 		911A855F140E402D001D0B1C /* ERDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ERDetailViewController.h; sourceTree = "<group>"; };
 		911A8560140E402D001D0B1C /* ERDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ERDetailViewController.m; sourceTree = "<group>"; };
+		914ED05E140E43FA00C1044E /* emacs.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = emacs.db; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +52,7 @@
 		911A853A140E402D001D0B1C = {
 			isa = PBXGroup;
 			children = (
+				914ED05E140E43FA00C1044E /* emacs.db */,
 				911A854D140E402D001D0B1C /* EmacsReference */,
 				911A8548140E402D001D0B1C /* Frameworks */,
 				911A8546140E402D001D0B1C /* Products */,
@@ -150,6 +153,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				914ED05F140E43FA00C1044E /* emacs.db in Resources */,
 				911A8552140E402D001D0B1C /* InfoPlist.strings in Resources */,
 				911A855B140E402D001D0B1C /* MainStoryboard.storyboard in Resources */,
 			);
@@ -277,6 +281,7 @@
 				911A8566140E402D001D0B1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
