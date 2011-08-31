@@ -21,16 +21,16 @@
 		911A8545140E402D001D0B1C /* EmacsReference.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmacsReference.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		911A8549140E402D001D0B1C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		911A854B140E402D001D0B1C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		911A854F140E402D001D0B1C /* EmacsReference-Info.plist */ = {isa = PBXFileReference; path = "EmacsReference-Info.plist"; sourceTree = "<group>"; };
+		911A854F140E402D001D0B1C /* EmacsReference-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EmacsReference-Info.plist"; sourceTree = "<group>"; };
 		911A8551140E402D001D0B1C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		911A8553140E402D001D0B1C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		911A8555140E402D001D0B1C /* EmacsReference-Prefix.pch */ = {isa = PBXFileReference; path = "EmacsReference-Prefix.pch"; sourceTree = "<group>"; };
-		911A8556140E402D001D0B1C /* ERAppDelegate.h */ = {isa = PBXFileReference; path = ERAppDelegate.h; sourceTree = "<group>"; };
+		911A8555140E402D001D0B1C /* EmacsReference-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EmacsReference-Prefix.pch"; sourceTree = "<group>"; };
+		911A8556140E402D001D0B1C /* ERAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ERAppDelegate.h; sourceTree = "<group>"; };
 		911A8557140E402D001D0B1C /* ERAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ERAppDelegate.m; sourceTree = "<group>"; };
 		911A855A140E402D001D0B1C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		911A855C140E402D001D0B1C /* ERMasterViewController.h */ = {isa = PBXFileReference; path = ERMasterViewController.h; sourceTree = "<group>"; };
+		911A855C140E402D001D0B1C /* ERMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ERMasterViewController.h; sourceTree = "<group>"; };
 		911A855D140E402D001D0B1C /* ERMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ERMasterViewController.m; sourceTree = "<group>"; };
-		911A855F140E402D001D0B1C /* ERDetailViewController.h */ = {isa = PBXFileReference; path = ERDetailViewController.h; sourceTree = "<group>"; };
+		911A855F140E402D001D0B1C /* ERDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ERDetailViewController.h; sourceTree = "<group>"; };
 		911A8560140E402D001D0B1C /* ERDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ERDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
