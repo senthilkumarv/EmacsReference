@@ -10,6 +10,7 @@
 
 
 @implementation ERDetailViewController
+@synthesize commands;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -33,7 +34,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
+    NSLog(@"Inside Details");
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
@@ -87,20 +88,24 @@
 {
 
     // Return the number of rows in the section.
-    return 0;
+    return [commands count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
+    static NSString *CellIdentifier = @"CommandCell";
     
     ERTableDetailCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[ERTableDetailCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        cell = [[ERTableDetailCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellIdentifier];
     }
     
-    // Configure the cell...
     
+    ERCommand *cmd = [commands objectAtIndex:indexPath.row];
+    //cell.textLabel.text = cmd.text;
+    cell.commandText.text = cmd.text;
+    cell.commandKey.text = cmd.key;
+    NSLog(@"Cell %@ %@", cmd.text, cmd.key);
     return cell;
 }
 

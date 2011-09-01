@@ -19,7 +19,8 @@
 
 sqlite3 *db;
 NSMutableArray *result;
-int ERExecuteSelectCallback(void *a_param, int argc, char **argv, char **column);
+int ERReadCommandCallback(void *context, int count, char **value, char **column);
+int ERReadCategoryCallback(void *context, int count, char **value, char **column);
 @synthesize fileName;
 
 -(NSString *) resourceFilePath {
@@ -30,6 +31,7 @@ int ERExecuteSelectCallback(void *a_param, int argc, char **argv, char **column)
 -(NSString *) documentFilePath {
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask,YES);
     NSString *documentsDirectory = [paths objectAtIndex:0];
+    NSLog(@"DocDir: %@", documentsDirectory);
     return [documentsDirectory stringByAppendingPathComponent: fileName];
 }
 
@@ -44,7 +46,6 @@ int ERExecuteSelectCallback(void *a_param, int argc, char **argv, char **column)
 -(BOOL) openDatabase {
     if(db != NULL)
         return YES;
-    NSLog(@"%@", [self documentFilePath]);
     int status = sqlite3_open([[self documentFilePath] UTF8String], &db);
     if(status == SQLITE_OK)
         return YES;
@@ -62,40 +63,52 @@ int ERExecuteSelectCallback(void *a_param, int argc, char **argv, char **column)
     return YES;
 }
 
--(NSArray *) executeSelectCommandOnTable: (NSString *) tableName andStorageClass: (id) object {
-    NSMutableArray *list = [NSMutableArray array];
-    return list;
-    
+-(NSArray *) readCategories {
+    [result removeAllObjects];
+    result = [NSMutableArray array];
+    if([self openDatabase]) {
+        char *err = NULL;
+        sqlite3_exec(db, "SELECT * FROM category", ERReadCategoryCallback, NULL, &err);
+        ERRCHECK
+    }
+    return [result copy];
 }
 
--(NSArray *) readCategories {
-    NSMutableArray *categories = [NSMutableArray array];
-    return categories;
+int ERReadCategoryCallback(void *context, int count, char **value, char **column) {
+    ERCategory *cat = [[ERCategory alloc] init];
+    cat.categoryId = atoi(value[0]);
+    cat.name = [NSString stringWithUTF8String:value[1]];
+    [result addObject:cat];
+    sqlite3_close(db);
+    return SQLITE_OK;    
 }
-int ERExecuteSelectCallback(void *a_param, int argc, char **argv, char **column) {
+
+int ERReadCommandCallback(void *context, int count, char **value, char **column) {
     ERCommand *cmd = [[ERCommand alloc] init];
-    cmd.commandId = atoi(argv[0]);
-    cmd.text = [NSString stringWithUTF8String:argv[1]];
-    cmd.key = [NSString stringWithUTF8String:argv[2]];
+    cmd.commandId = atoi(value[0]);
+    cmd.text = [NSString stringWithUTF8String:value[1]];
+    cmd.key = [NSString stringWithUTF8String:value[2]];
+    cmd.category = atoi(value[3]);
     [result addObject:cmd];
     sqlite3_close(db);
     return SQLITE_OK;
 }
 
 -(NSArray *) readCommands {
-    result = [NSMutableArray array];
+    [result removeAllObjects];
     if([self openDatabase]) {
         char *err = NULL;
-        sqlite3_exec(db, "SELECT * FROM command", ERExecuteSelectCallback, NULL, &err);
+        sqlite3_exec(db, "SELECT * FROM command", ERReadCommandCallback, NULL, &err);
         ERRCHECK
     }
-    return result;
+    return [result copy];
 }
 
 - (id)initWithDatabaseFileName:(NSString *) value {
     self = [super init];
     if (self) {
         self.fileName = value;
+        result = [NSMutableArray array];
         [self setupDatabase];
     }
     return self;

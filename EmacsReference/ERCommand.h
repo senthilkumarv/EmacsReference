@@ -13,12 +13,12 @@
     int commandId;
     NSString *text;
     NSString *key;
-    ERCategory *category;
+   int category;
 }
 
 @property(nonatomic) int commandId;
 @property(nonatomic, retain) NSString *text;
 @property(nonatomic, retain) NSString *key;
-@property(nonatomic, retain) ERCategory *category;
+@property(nonatomic) int category;
 
 @end

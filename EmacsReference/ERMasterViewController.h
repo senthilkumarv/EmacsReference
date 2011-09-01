@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ERAppDelegate.h"
 
 @class ERDetailViewController;
 
-@interface ERMasterViewController : UITableViewController
+@interface ERMasterViewController : UITableViewController <UITableViewDataSource, UITableViewDelegate>
 
 @property (strong, nonatomic) ERDetailViewController *detailViewController;
 

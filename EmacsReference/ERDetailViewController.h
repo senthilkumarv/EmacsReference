@@ -8,7 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "ERTableDetailCell.h"
+#import "ERCommand.h"
 
-@interface ERDetailViewController : UITableViewController
+@interface ERDetailViewController : UITableViewController {
+    @private
+    NSArray *commands;
+}
+
+@property(nonatomic, retain) NSArray *commands;
 
 @end

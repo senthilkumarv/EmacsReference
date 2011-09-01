@@ -9,6 +9,9 @@
 #import <Foundation/Foundation.h>
 #import "ERCommand.h"
 @interface ERDataReader : NSObject
+
 -(NSArray *) readCommands;
+-(NSArray *) readCategories;
 - (id)initWithDatabaseFileName:(NSString *) value;
+
 @end

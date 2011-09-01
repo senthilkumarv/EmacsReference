@@ -11,12 +11,14 @@
 @implementation ERAppDelegate
 
 @synthesize window = _window;
+@synthesize commands;
+@synthesize categories;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
     ERDataReader *rdr = [[ERDataReader alloc] initWithDatabaseFileName:@"emacs.db"];
-    [rdr readCommands];
+    self.categories = [rdr readCategories];
+    self.commands = [rdr readCommands];
     return YES;
 }
 							

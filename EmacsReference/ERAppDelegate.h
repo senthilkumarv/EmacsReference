@@ -8,8 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "ERDataReader.h"
-@interface ERAppDelegate : UIResponder <UIApplicationDelegate>
-
+@interface ERAppDelegate : UIResponder <UIApplicationDelegate> {
+    @private
+    NSArray *commands;
+    NSArray *categories;
+}
 @property (strong, nonatomic) UIWindow *window;
+@property(nonatomic, retain) NSArray *commands;
+@property(nonatomic, retain) NSArray *categories;
 
 @end

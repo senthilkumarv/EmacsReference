@@ -14,6 +14,16 @@
 
 @synthesize detailViewController = _detailViewController;
 
+NSArray *categories;
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    NSLog(@"Inside Prepare for Segue %@", [segue identifier]);
+    ERAppDelegate *appDelegate = (ERAppDelegate *)[[UIApplication sharedApplication] delegate];
+    ERDetailViewController *detailViewController = [segue destinationViewController];
+    [detailViewController setCommands:[appDelegate commands]];
+    [[detailViewController tableView] reloadData];
+}
+
 - (void)awakeFromNib
 {
     [super awakeFromNib];
@@ -30,7 +40,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    ERAppDelegate *appDelegate = (ERAppDelegate *)[[UIApplication sharedApplication] delegate];
+    categories = [appDelegate categories];
+
 }
 
 - (void)viewDidUnload
@@ -66,6 +78,26 @@
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
 
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [categories count];
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    ERCategory *category = [categories objectAtIndex: indexPath.row];
+    NSString *CellIdentifier = [NSString stringWithFormat:@"%d", [category categoryId]];
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+    }
+    cell.textLabel.text = [category name];
+    
+    return cell;
+}
+
+-(void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [self performSegueWithIdentifier:@"ShowCommands" sender:tableView];
+}
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath

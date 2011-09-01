@@ -12,7 +12,7 @@
 @synthesize commandId, text, key, category;
 
 -(NSString *) description {
-    return [NSString stringWithFormat:@"%d %@ %@", commandId, text, key];
+    return [NSString stringWithFormat:@"%d %@ %@ %d", self.commandId, self.text, self.key, self.category];
 }
 
 @end

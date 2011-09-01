@@ -10,4 +10,9 @@
 
 @implementation ERCategory
 @synthesize categoryId, name;
+
+-(NSString *) description {
+    return [NSString stringWithFormat:@"%d %@", self.categoryId, self.name];
+}
+
 @end
