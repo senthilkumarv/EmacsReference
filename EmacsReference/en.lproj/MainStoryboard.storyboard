@@ -68,26 +68,26 @@
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Command" lineBreakMode="tailTruncation" minimumFontSize="10" id="l5v-HB-rMP">
-                                            <rect key="frame" x="197" y="25" width="116" height="21"/>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Command" lineBreakMode="wordWrap" numberOfLines="0" minimumFontSize="10" id="l5v-HB-rMP">
+                                            <rect key="frame" x="5" y="1" width="89" height="68"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="Command Text" id="cJc-ZJ-kts">
-                                            <rect key="frame" x="0.0" y="0.0" width="198" height="69"/>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="wordWrap" numberOfLines="0" minimumFontSize="10" id="vLr-Yq-ODk">
+                                            <rect key="frame" x="97" y="2" width="220" height="67"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                        </textView>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <connections>
                                     <outlet property="commandKey" destination="l5v-HB-rMP" id="BaV-sO-ag0"/>
-                                    <outlet property="commandText" destination="cJc-ZJ-kts" id="q32-6w-5TO"/>
+                                    <outlet property="commandText" destination="vLr-Yq-ODk" id="Yks-df-VeL"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -113,7 +113,7 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ERTableDetailCell.h"/>
             <relationships>
                 <relationship kind="outlet" name="commandKey" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="commandText" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="commandText" candidateClass="UILabel"/>
             </relationships>
         </class>
     </classes>

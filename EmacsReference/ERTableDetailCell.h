@@ -9,9 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface ERTableDetailCell : UITableViewCell {
-    UITextView *commandText;
+    UILabel *commandText;
     UILabel *commandKey;
 }
-@property(nonatomic, retain) IBOutlet UITextView *commandText;
+@property(nonatomic, retain) IBOutlet UILabel *commandText;
 @property(nonatomic, retain) IBOutlet UILabel *commandKey;
 @end

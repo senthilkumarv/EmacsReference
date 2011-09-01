@@ -103,7 +103,7 @@
     
     ERCommand *cmd = [commands objectAtIndex:indexPath.row];
     //cell.textLabel.text = cmd.text;
-    cell.commandText.text = cmd.text;
+    cell.commandText.text = [cmd.text capitalizedString];
     cell.commandKey.text = cmd.key;
     NSLog(@"Cell %@ %@", cmd.text, cmd.key);
     return cell;
@@ -160,5 +160,7 @@
      [self.navigationController pushViewController:detailViewController animated:YES];
      */
 }
-
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 70.0f;
+}
 @end
