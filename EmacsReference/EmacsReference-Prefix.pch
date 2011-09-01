@@ -4,6 +4,8 @@
 
 #import <Availability.h>
 
+#define ERRCHECK {if (err!=NULL) {printf("%s\n",err);  return 0;}}
+
 #ifndef __IPHONE_5_0
 #warning "This project uses features only available in iOS SDK 5.0 and later."
 #endif
@@ -11,4 +13,5 @@
 #ifdef __OBJC__
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
+    #import <sqlite3.h>
 #endif

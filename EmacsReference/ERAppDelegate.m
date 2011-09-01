@@ -15,6 +15,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    ERDataReader *rdr = [[ERDataReader alloc] initWithDatabaseFileName:@"emacs.db"];
+    [rdr readCommands];
     return YES;
 }
 							

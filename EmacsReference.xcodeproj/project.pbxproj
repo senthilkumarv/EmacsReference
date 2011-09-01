@@ -14,8 +14,13 @@
 		911A8558140E402D001D0B1C /* ERAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 911A8557140E402D001D0B1C /* ERAppDelegate.m */; };
 		911A855B140E402D001D0B1C /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 911A8559140E402D001D0B1C /* MainStoryboard.storyboard */; };
 		911A855E140E402D001D0B1C /* ERMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 911A855D140E402D001D0B1C /* ERMasterViewController.m */; };
-		911A8561140E402D001D0B1C /* ERDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 911A8560140E402D001D0B1C /* ERDetailViewController.m */; };
 		914ED05F140E43FA00C1044E /* emacs.db in Resources */ = {isa = PBXBuildFile; fileRef = 914ED05E140E43FA00C1044E /* emacs.db */; };
+		914ED063140E47A900C1044E /* ERTableDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 914ED062140E47A900C1044E /* ERTableDetailCell.m */; };
+		914ED066140E490C00C1044E /* ERDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 914ED065140E490C00C1044E /* ERDetailViewController.m */; };
+		914ED069140E4C2E00C1044E /* ERDataReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 914ED068140E4C2E00C1044E /* ERDataReader.m */; };
+		914ED06B140E4C7300C1044E /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 914ED06A140E4C7300C1044E /* libsqlite3.0.dylib */; };
+		914ED06E140E546800C1044E /* ERCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 914ED06D140E546800C1044E /* ERCategory.m */; };
+		914ED071140E54E500C1044E /* ERCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 914ED070140E54E500C1044E /* ERCommand.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,9 +36,18 @@
 		911A855A140E402D001D0B1C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		911A855C140E402D001D0B1C /* ERMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ERMasterViewController.h; sourceTree = "<group>"; };
 		911A855D140E402D001D0B1C /* ERMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ERMasterViewController.m; sourceTree = "<group>"; };
-		911A855F140E402D001D0B1C /* ERDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ERDetailViewController.h; sourceTree = "<group>"; };
-		911A8560140E402D001D0B1C /* ERDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ERDetailViewController.m; sourceTree = "<group>"; };
 		914ED05E140E43FA00C1044E /* emacs.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = emacs.db; sourceTree = "<group>"; };
+		914ED061140E47A900C1044E /* ERTableDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ERTableDetailCell.h; sourceTree = "<group>"; };
+		914ED062140E47A900C1044E /* ERTableDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ERTableDetailCell.m; sourceTree = "<group>"; };
+		914ED064140E490C00C1044E /* ERDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ERDetailViewController.h; sourceTree = "<group>"; };
+		914ED065140E490C00C1044E /* ERDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ERDetailViewController.m; sourceTree = "<group>"; };
+		914ED067140E4C2E00C1044E /* ERDataReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ERDataReader.h; sourceTree = "<group>"; };
+		914ED068140E4C2E00C1044E /* ERDataReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ERDataReader.m; sourceTree = "<group>"; };
+		914ED06A140E4C7300C1044E /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		914ED06C140E546800C1044E /* ERCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ERCategory.h; sourceTree = "<group>"; };
+		914ED06D140E546800C1044E /* ERCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ERCategory.m; sourceTree = "<group>"; };
+		914ED06F140E54E500C1044E /* ERCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ERCommand.h; sourceTree = "<group>"; };
+		914ED070140E54E500C1044E /* ERCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ERCommand.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				914ED06B140E4C7300C1044E /* libsqlite3.0.dylib in Frameworks */,
 				911A854A140E402D001D0B1C /* UIKit.framework in Frameworks */,
 				911A854C140E402D001D0B1C /* Foundation.framework in Frameworks */,
 			);
@@ -70,6 +85,7 @@
 		911A8548140E402D001D0B1C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				914ED06A140E4C7300C1044E /* libsqlite3.0.dylib */,
 				911A8549140E402D001D0B1C /* UIKit.framework */,
 				911A854B140E402D001D0B1C /* Foundation.framework */,
 			);
@@ -84,9 +100,17 @@
 				911A8559140E402D001D0B1C /* MainStoryboard.storyboard */,
 				911A855C140E402D001D0B1C /* ERMasterViewController.h */,
 				911A855D140E402D001D0B1C /* ERMasterViewController.m */,
-				911A855F140E402D001D0B1C /* ERDetailViewController.h */,
-				911A8560140E402D001D0B1C /* ERDetailViewController.m */,
 				911A854E140E402D001D0B1C /* Supporting Files */,
+				914ED061140E47A900C1044E /* ERTableDetailCell.h */,
+				914ED062140E47A900C1044E /* ERTableDetailCell.m */,
+				914ED064140E490C00C1044E /* ERDetailViewController.h */,
+				914ED065140E490C00C1044E /* ERDetailViewController.m */,
+				914ED067140E4C2E00C1044E /* ERDataReader.h */,
+				914ED068140E4C2E00C1044E /* ERDataReader.m */,
+				914ED06C140E546800C1044E /* ERCategory.h */,
+				914ED06D140E546800C1044E /* ERCategory.m */,
+				914ED06F140E54E500C1044E /* ERCommand.h */,
+				914ED070140E54E500C1044E /* ERCommand.m */,
 			);
 			path = EmacsReference;
 			sourceTree = "<group>";
@@ -169,7 +193,11 @@
 				911A8554140E402D001D0B1C /* main.m in Sources */,
 				911A8558140E402D001D0B1C /* ERAppDelegate.m in Sources */,
 				911A855E140E402D001D0B1C /* ERMasterViewController.m in Sources */,
-				911A8561140E402D001D0B1C /* ERDetailViewController.m in Sources */,
+				914ED063140E47A900C1044E /* ERTableDetailCell.m in Sources */,
+				914ED066140E490C00C1044E /* ERDetailViewController.m in Sources */,
+				914ED069140E4C2E00C1044E /* ERDataReader.m in Sources */,
+				914ED06E140E546800C1044E /* ERCategory.m in Sources */,
+				914ED071140E54E500C1044E /* ERCommand.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,11 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ERTableDetailCell.h"
 
-@interface ERDetailViewController : UIViewController
-
-@property (strong, nonatomic) id detailItem;
-
-@property (strong, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
+@interface ERDetailViewController : UITableViewController
 
 @end
