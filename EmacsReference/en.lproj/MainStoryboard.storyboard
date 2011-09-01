@@ -17,7 +17,7 @@
                     </connections>
                 </navigationController>
             </objects>
-            <point key="canvasLocation" x="-217" y="64"/>
+            <point key="canvasLocation" x="-199" y="64"/>
         </scene>
         <scene sceneID="18">
             <objects>
@@ -28,7 +28,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="qYP-uq-arq">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CategoryCell" id="qYP-uq-arq">
                                 <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -56,7 +56,7 @@
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QAT-au-VZr" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="Koq-2c-zUm" customClass="ERDetailViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Lp4-G4-5aH">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Lp4-G4-5aH">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -99,7 +99,7 @@
                     <navigationItem key="navigationItem" title="Commands" id="7mB-p1-cO4"/>
                 </tableViewController>
             </objects>
-            <point key="canvasLocation" x="748" y="64"/>
+            <point key="canvasLocation" x="686" y="64"/>
         </scene>
     </scenes>
     <classes>

@@ -31,7 +31,6 @@ int ERReadCategoryCallback(void *context, int count, char **value, char **column
 -(NSString *) documentFilePath {
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask,YES);
     NSString *documentsDirectory = [paths objectAtIndex:0];
-    NSLog(@"DocDir: %@", documentsDirectory);
     return [documentsDirectory stringByAppendingPathComponent: fileName];
 }
 
