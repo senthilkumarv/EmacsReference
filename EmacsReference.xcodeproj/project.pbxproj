@@ -22,6 +22,7 @@
 		914ED06B140E4C7300C1044E /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 914ED06A140E4C7300C1044E /* libsqlite3.0.dylib */; };
 		914ED06E140E546800C1044E /* ERCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 914ED06D140E546800C1044E /* ERCategory.m */; };
 		914ED071140E54E500C1044E /* ERCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 914ED070140E54E500C1044E /* ERCommand.m */; };
+		919F14DB1410FB0000312682 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 919F14DA1410FB0000312682 /* Icon.png */; };
 		91AF1973140FA888007BFB94 /* ERCommandSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AF1972140FA888007BFB94 /* ERCommandSearchController.m */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,7 @@
 		914ED06D140E546800C1044E /* ERCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ERCategory.m; sourceTree = "<group>"; };
 		914ED06F140E54E500C1044E /* ERCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ERCommand.h; sourceTree = "<group>"; };
 		914ED070140E54E500C1044E /* ERCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ERCommand.m; sourceTree = "<group>"; };
+		919F14DA1410FB0000312682 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		91AF1971140FA888007BFB94 /* ERCommandSearchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ERCommandSearchController.h; sourceTree = "<group>"; };
 		91AF1972140FA888007BFB94 /* ERCommandSearchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ERCommandSearchController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -101,6 +103,7 @@
 		911A854D140E402D001D0B1C /* EmacsReference */ = {
 			isa = PBXGroup;
 			children = (
+				919F14DA1410FB0000312682 /* Icon.png */,
 				911A8556140E402D001D0B1C /* ERAppDelegate.h */,
 				911A8557140E402D001D0B1C /* ERAppDelegate.m */,
 				911A8559140E402D001D0B1C /* MainStoryboard.storyboard */,
@@ -139,9 +142,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		911A8544140E402D001D0B1C /* EmacsReference */ = {
+		911A8544140E402D001D0B1C /* EmacsRef */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 911A8564140E402D001D0B1C /* Build configuration list for PBXNativeTarget "EmacsReference" */;
+			buildConfigurationList = 911A8564140E402D001D0B1C /* Build configuration list for PBXNativeTarget "EmacsRef" */;
 			buildPhases = (
 				911A8541140E402D001D0B1C /* Sources */,
 				911A8542140E402D001D0B1C /* Frameworks */,
@@ -151,7 +154,7 @@
 			);
 			dependencies = (
 			);
-			name = EmacsReference;
+			name = EmacsRef;
 			productName = EmacsReference;
 			productReference = 911A8545140E402D001D0B1C /* EmacsReference.app */;
 			productType = "com.apple.product-type.application";
@@ -177,7 +180,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				911A8544140E402D001D0B1C /* EmacsReference */,
+				911A8544140E402D001D0B1C /* EmacsRef */,
 			);
 		};
 /* End PBXProject section */
@@ -190,6 +193,7 @@
 				914ED05F140E43FA00C1044E /* emacs.db in Resources */,
 				911A8552140E402D001D0B1C /* InfoPlist.strings in Resources */,
 				911A855B140E402D001D0B1C /* MainStoryboard.storyboard in Resources */,
+				919F14DB1410FB0000312682 /* Icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,7 +318,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		911A8564140E402D001D0B1C /* Build configuration list for PBXNativeTarget "EmacsReference" */ = {
+		911A8564140E402D001D0B1C /* Build configuration list for PBXNativeTarget "EmacsRef" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				911A8565140E402D001D0B1C /* Debug */,
