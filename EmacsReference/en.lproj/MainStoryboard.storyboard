@@ -17,7 +17,7 @@
                     </connections>
                 </navigationController>
             </objects>
-            <point key="canvasLocation" x="-199" y="64"/>
+            <point key="canvasLocation" x="-245" y="-245"/>
         </scene>
         <scene sceneID="18">
             <objects>
@@ -56,7 +56,7 @@
                     </navigationItem>
                 </tableViewController>
             </objects>
-            <point key="canvasLocation" x="236" y="64"/>
+            <point key="canvasLocation" x="226" y="-245"/>
         </scene>
         <scene sceneID="Kz9-Z4-7s4">
             <objects>
@@ -120,14 +120,14 @@
                             <outlet property="delegate" destination="4oc-YJ-B4B" id="RdB-LK-x3q"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="bGw-tT-eep"/>
+                    <navigationItem key="navigationItem" title="Search" id="bGw-tT-eep"/>
                     <connections>
                         <outlet property="resultTableController" destination="bNP-eO-ge2" id="Jja-pR-GSz"/>
                         <outlet property="searchDisplayController" destination="ogw-fV-cMz" id="mtb-e7-qut"/>
                     </connections>
                 </tableViewController>
             </objects>
-            <point key="canvasLocation" x="766" y="-503"/>
+            <point key="canvasLocation" x="774" y="-495"/>
         </scene>
         <scene sceneID="5dD-Tq-hGX">
             <objects>
@@ -168,14 +168,14 @@
                             </tableViewSection>
                         </sections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="caJ-hu-Mzb"/>
+                    <navigationItem key="navigationItem" title="Command" id="caJ-hu-Mzb"/>
                     <connections>
                         <outlet property="keyCell" destination="Ucs-qZ-esn" id="jzg-Zm-3Vu"/>
                         <outlet property="purposeCell" destination="fpN-gT-Odr" id="17s-C5-E1C"/>
                     </connections>
                 </tableViewController>
             </objects>
-            <point key="canvasLocation" x="1146" y="-504"/>
+            <point key="canvasLocation" x="1314" y="-245"/>
         </scene>
         <scene sceneID="vRg-5U-R64">
             <objects>
@@ -262,6 +262,6 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="Pr7-cV-Qmm"/>
+        <segue reference="Qtq-aS-bmT"/>
     </inferredMetricsTieBreakers>
 </document>
