@@ -47,25 +47,150 @@
                             <outlet property="dataSource" destination="12" id="16"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Categories" id="35"/>
+                    <navigationItem key="navigationItem" title="Categories" id="35">
+                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="msa-w8-ZbX">
+                            <connections>
+                                <segue destination="4oc-YJ-B4B" kind="push" identifier="SearchCommands" id="TWO-pt-M4i"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
             </objects>
             <point key="canvasLocation" x="236" y="64"/>
+        </scene>
+        <scene sceneID="Kz9-Z4-7s4">
+            <objects>
+                <searchDisplayController id="ogw-fV-cMz">
+                    <connections>
+                        <outlet property="delegate" destination="4oc-YJ-B4B" id="dat-HY-UHP"/>
+                        <outlet property="searchBar" destination="PHb-BE-Nft" id="fIp-Fx-eHm"/>
+                        <outlet property="searchContentsController" destination="4oc-YJ-B4B" id="U5f-fG-XWV"/>
+                        <outlet property="searchResultsDataSource" destination="4oc-YJ-B4B" id="VuV-iX-mDC"/>
+                        <outlet property="searchResultsDelegate" destination="4oc-YJ-B4B" id="EqL-Ij-sa5"/>
+                    </connections>
+                </searchDisplayController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QkU-LS-hDy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController id="4oc-YJ-B4B" customClass="ERCommandSearchController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="bNP-eO-ge2">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="PHb-BE-Nft">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="4oc-YJ-B4B" id="Jdi-qa-WB0"/>
+                            </connections>
+                        </searchBar>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CommandCell" rowHeight="70" id="keQ-gv-wea" customClass="ERTableDetailCell">
+                                <rect key="frame" x="0.0" y="66" width="320" height="70"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="69"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Command" lineBreakMode="wordWrap" numberOfLines="0" minimumFontSize="10" id="DC8-CB-wv3">
+                                            <rect key="frame" x="4" y="1" width="89" height="68"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="wordWrap" numberOfLines="0" minimumFontSize="10" id="0Kv-ic-kbQ">
+                                            <rect key="frame" x="96" y="2" width="204" height="66"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <connections>
+                                    <outlet property="commandKey" destination="DC8-CB-wv3" id="h8q-aB-udJ"/>
+                                    <outlet property="commandText" destination="0Kv-ic-kbQ" id="3xa-K6-bkv"/>
+                                    <segue destination="a8W-5N-VFv" kind="push" id="Qtq-aS-bmT"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="4oc-YJ-B4B" id="GYT-Bl-9XD"/>
+                            <outlet property="delegate" destination="4oc-YJ-B4B" id="RdB-LK-x3q"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="bGw-tT-eep"/>
+                    <connections>
+                        <outlet property="resultTableController" destination="bNP-eO-ge2" id="Jja-pR-GSz"/>
+                        <outlet property="searchDisplayController" destination="ogw-fV-cMz" id="mtb-e7-qut"/>
+                    </connections>
+                </tableViewController>
+            </objects>
+            <point key="canvasLocation" x="766" y="-503"/>
+        </scene>
+        <scene sceneID="5dD-Tq-hGX">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7rI-GX-B0Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController id="a8W-5N-VFv" customClass="ERSearchDetailViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="AOs-pe-H1o">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection headerTitle="Key" id="8aP-sE-F0T">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="Ucs-qZ-esn">
+                                        <rect key="frame" x="0.0" y="46" width="320" height="46"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="10" y="1" width="300" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Purpose" id="2n3-zZ-IlD">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="fpN-gT-Odr">
+                                        <rect key="frame" x="0.0" y="138" width="320" height="46"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="10" y="1" width="300" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="caJ-hu-Mzb"/>
+                    <connections>
+                        <outlet property="keyCell" destination="Ucs-qZ-esn" id="jzg-Zm-3Vu"/>
+                        <outlet property="purposeCell" destination="fpN-gT-Odr" id="17s-C5-E1C"/>
+                    </connections>
+                </tableViewController>
+            </objects>
+            <point key="canvasLocation" x="1146" y="-504"/>
         </scene>
         <scene sceneID="vRg-5U-R64">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QAT-au-VZr" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="Koq-2c-zUm" customClass="ERDetailViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Lp4-G4-5aH">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Lp4-G4-5aH">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CommandCell" rowHeight="70" id="iVw-cg-aPS" customClass="ERTableDetailCell">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CommandCell" editingAccessoryType="disclosureIndicator" rowHeight="70" id="iVw-cg-aPS" customClass="ERTableDetailCell">
                                 <rect key="frame" x="0.0" y="22" width="320" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="69"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Command" lineBreakMode="wordWrap" numberOfLines="0" minimumFontSize="10" id="l5v-HB-rMP">
@@ -76,7 +201,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="wordWrap" numberOfLines="0" minimumFontSize="10" id="vLr-Yq-ODk">
-                                            <rect key="frame" x="97" y="2" width="220" height="67"/>
+                                            <rect key="frame" x="97" y="2" width="203" height="67"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -88,6 +213,7 @@
                                 <connections>
                                     <outlet property="commandKey" destination="l5v-HB-rMP" id="BaV-sO-ag0"/>
                                     <outlet property="commandText" destination="vLr-Yq-ODk" id="Yks-df-VeL"/>
+                                    <segue destination="a8W-5N-VFv" kind="push" identifier="ShowDetails" id="Pr7-cV-Qmm"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -99,15 +225,28 @@
                     <navigationItem key="navigationItem" title="Commands" id="7mB-p1-cO4"/>
                 </tableViewController>
             </objects>
-            <point key="canvasLocation" x="686" y="64"/>
+            <point key="canvasLocation" x="766" y="64"/>
         </scene>
     </scenes>
     <classes>
+        <class className="ERCommandSearchController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ERCommandSearchController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="resultTableController" candidateClass="UITableView"/>
+            </relationships>
+        </class>
         <class className="ERDetailViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ERDetailViewController.h"/>
         </class>
         <class className="ERMasterViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ERMasterViewController.h"/>
+        </class>
+        <class className="ERSearchDetailViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ERSearchDetailViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="keyCell" candidateClass="UITableViewCell"/>
+                <relationship kind="outlet" name="purposeCell" candidateClass="UITableViewCell"/>
+            </relationships>
         </class>
         <class className="ERTableDetailCell" superclassName="UITableViewCell">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ERTableDetailCell.h"/>
@@ -122,4 +261,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="Pr7-cV-Qmm"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		910FBDC214109335000CC8B1 /* ERSearchDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 910FBDC114109335000CC8B1 /* ERSearchDetailViewController.m */; };
 		911A854A140E402D001D0B1C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 911A8549140E402D001D0B1C /* UIKit.framework */; };
 		911A854C140E402D001D0B1C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 911A854B140E402D001D0B1C /* Foundation.framework */; };
 		911A8552140E402D001D0B1C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 911A8550140E402D001D0B1C /* InfoPlist.strings */; };
@@ -21,9 +22,12 @@
 		914ED06B140E4C7300C1044E /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 914ED06A140E4C7300C1044E /* libsqlite3.0.dylib */; };
 		914ED06E140E546800C1044E /* ERCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 914ED06D140E546800C1044E /* ERCategory.m */; };
 		914ED071140E54E500C1044E /* ERCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 914ED070140E54E500C1044E /* ERCommand.m */; };
+		91AF1973140FA888007BFB94 /* ERCommandSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AF1972140FA888007BFB94 /* ERCommandSearchController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		910FBDC014109335000CC8B1 /* ERSearchDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ERSearchDetailViewController.h; sourceTree = "<group>"; };
+		910FBDC114109335000CC8B1 /* ERSearchDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ERSearchDetailViewController.m; sourceTree = "<group>"; };
 		911A8545140E402D001D0B1C /* EmacsReference.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmacsReference.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		911A8549140E402D001D0B1C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		911A854B140E402D001D0B1C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -48,6 +52,8 @@
 		914ED06D140E546800C1044E /* ERCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ERCategory.m; sourceTree = "<group>"; };
 		914ED06F140E54E500C1044E /* ERCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ERCommand.h; sourceTree = "<group>"; };
 		914ED070140E54E500C1044E /* ERCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ERCommand.m; sourceTree = "<group>"; };
+		91AF1971140FA888007BFB94 /* ERCommandSearchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ERCommandSearchController.h; sourceTree = "<group>"; };
+		91AF1972140FA888007BFB94 /* ERCommandSearchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ERCommandSearchController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +117,10 @@
 				914ED06D140E546800C1044E /* ERCategory.m */,
 				914ED06F140E54E500C1044E /* ERCommand.h */,
 				914ED070140E54E500C1044E /* ERCommand.m */,
+				91AF1971140FA888007BFB94 /* ERCommandSearchController.h */,
+				91AF1972140FA888007BFB94 /* ERCommandSearchController.m */,
+				910FBDC014109335000CC8B1 /* ERSearchDetailViewController.h */,
+				910FBDC114109335000CC8B1 /* ERSearchDetailViewController.m */,
 			);
 			path = EmacsReference;
 			sourceTree = "<group>";
@@ -198,6 +208,8 @@
 				914ED069140E4C2E00C1044E /* ERDataReader.m in Sources */,
 				914ED06E140E546800C1044E /* ERCategory.m in Sources */,
 				914ED071140E54E500C1044E /* ERCommand.m in Sources */,
+				91AF1973140FA888007BFB94 /* ERCommandSearchController.m in Sources */,
+				910FBDC214109335000CC8B1 /* ERSearchDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

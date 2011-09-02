@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "ERTableDetailCell.h"
 #import "ERCommand.h"
+#import "ERSearchDetailViewController.h"
 
 @interface ERDetailViewController : UITableViewController {
     @private

@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "ERAppDelegate.h"
+#import "ERCommandSearchController.h"
 
 @class ERDetailViewController;
 
